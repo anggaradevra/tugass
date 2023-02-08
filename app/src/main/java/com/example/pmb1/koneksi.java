@@ -9,9 +9,8 @@ public class koneksi {
 
     public static Retrofit getClient() {
         if (retrofit == null) {
-            retrofit = new Retrofit.Builder().baseUrl(Link).addConverterFactory(GsonConverterFactory.create()).build();
-
+            retrofit = new Retrofit.Builder().baseUrl("http://192.168.240.1/maba/").addConverterFactory(GsonConverterFactory.create()).build();
         }
-        return null;
+        return retrofit;
     }
 }

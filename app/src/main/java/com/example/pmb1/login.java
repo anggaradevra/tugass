@@ -73,6 +73,11 @@
     public void signin (){
         final String email_ = email.getText().toString();
         final String password_ = password.getText().toString();
+        try {
+
+        }catch (NullPointerException exception){
+            exception.printStackTrace();
+        }
 
         API api = koneksi.getClient().create(API.class);
 
